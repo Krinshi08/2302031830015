@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 70%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .search-box {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .filter-buttons button {
+            padding: 8px 15px;
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            background: white;
+        }
+        .filter-buttons button:hover {
+            background: black;
+            color: white;
+        }
+        .category-boxes {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .category-box {
+            width: 30%;
+            background: #f1f1f1;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        .search-results {
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+            margin-top: 15px;
+        }
+        .result-item {
+            margin-bottom: 10px;
+        }
+        .result-item strong {
+            font-size: 16px;
+        }
+        .view-all-btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Search Section -->
+        <div class="section-title">Search Results</div>
+        <input type="text" class="search-box" placeholder="Enter your search query...">
+        <small>Search news articles, events, businesses</small>
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button>Articles</button>
+            <button>Events</button>
+            <button>Businesses</button>
+        </div>
+
+        <!-- Category Boxes -->
+        <div class="category-boxes">
+            <div class="category-box">Articles</div>
+            <div class="category-box">Events</div>
+            <div class="category-box">Businesses</div>
+        </div>
+
+        <!-- Search Results -->
+        <div class="search-results">
+            <div class="result-item">
+                <strong>Article 1</strong> <br>
+                News articles on recent events
+            </div>
+            <div class="result-item">
+                <strong>Event 1</strong> <br>
+                Upcoming event in your area
+            </div>
+            <div class="result-item">
+                <strong>Business 1</strong> <br>
+                Local businesses offering services
+            </div>
+        </div>
+
+        <!-- View All Results Button -->
+        <button class="view-all-btn">View All Results</button>
+    </div>
+
+</body>
+</html>

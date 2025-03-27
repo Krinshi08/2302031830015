@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Business Directory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4">
+    
+    <!-- Search Bar -->
+    <div class="max-w-4xl mx-auto bg-white p-4 rounded shadow">
+        <input type="text" placeholder="Search for a business" class="w-full p-2 border rounded">
+    </div>
+    
+    <!-- Category Buttons -->
+    <div class="max-w-4xl mx-auto flex justify-around mt-4">
+        <button class="p-2 bg-gray-200 rounded">Food & Drink</button>
+        <button class="p-2 bg-gray-200 rounded">Retail</button>
+        <button class="p-2 bg-gray-200 rounded">Services</button>
+    </div>
+    
+    <!-- Business Listings -->
+    <div class="max-w-4xl mx-auto bg-white mt-4 p-4 rounded shadow">
+        <h2 class="font-semibold">Food & Drink</h2>
+        <div class="mt-2">
+            <p><strong>Pizza Place</strong> - 123 Main St - Rating: 4.5</p>
+            <p><strong>Ice Cream Shop</strong> - 456 Center Ave - Rating: 4.8</p>
+        </div>
+    </div>
+    
+    <!-- Sort and Filter Buttons -->
+    <div class="max-w-4xl mx-auto flex justify-between mt-4">
+        <button class="p-2 bg-gray-300 rounded w-1/2 mr-2">Sort</button>
+        <button class="p-2 bg-black text-white rounded w-1/2">Filter</button>
+    </div>
+    
+    <!-- Featured Retailers -->
+    <div class="max-w-4xl mx-auto mt-4 grid grid-cols-2 gap-4">
+        <div class="bg-white p-4 rounded shadow">
+            <img src="food1.png" alt="Local Business Directory Wireframe" class="w-full h-auto">
+
+            <p>Product 1 - $20</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+            <img src="food2.png" alt="Local Business Directory Wireframe" class="w-full h-auto">
+
+            <p>Product 2 - $30</p>
+        </div>
+    </div>
+    
+    <!-- Bottom Navigation -->
+    <div class="max-w-4xl mx-auto flex justify-around bg-white p-4 mt-4 rounded shadow">
+        <button class="p-2">🏠 Home</button>
+        <button class="p-2">📍 Nearby</button>
+    </div>
+    
+</body>
+</html>
+

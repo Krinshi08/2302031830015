@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 0;
+            border-bottom: 2px solid #ddd;
+        }
+        .event-header {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .event-header h2 {
+            margin-left: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .event-details {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .event-details img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .event-info {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .buttons button {
+            width: 48%;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .share-button {
+            background: white;
+            border: 1px solid black;
+        }
+        .rsvp-button {
+            background: black;
+            color: white;
+        }
+        .share-button:hover {
+            background: #ddd;
+        }
+        .rsvp-button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Event Details Section -->
+        <div class="section-title">Event Details</div>
+
+        <!-- Event Header -->
+        <div class="event-header">
+            <h2>Event Title</h2>
+            <p style="margin-left: 10px; color: gray;">Date | Time | Location | Hosted by</p>
+        </div>
+
+        <!-- Event Description -->
+        <div class="event-details">
+            <h3>Event Description</h3>
+            <img src="event-image.png" alt="Event Image">
+            <p class="event-info">Detailed event information</p>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button class="share-button">Share</button>
+            <button class="rsvp-button">RSVP</button>
+        </div>
+    </div>
+
+</body>
+</html>

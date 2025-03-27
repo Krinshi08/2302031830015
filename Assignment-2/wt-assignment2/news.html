@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 50%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .categories {
+            display: flex;
+            gap: 10px;
+        }
+        .category {
+            background: white;
+            border: 1px solid black;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .category:hover, .category.active {
+            background: black;
+            color: white;
+        }
+        .subscribe-btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .confirmation {
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: green;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="section-title">Newsletter Signup</div>
+
+        <!-- Name Input -->
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+
+        <!-- Email Input -->
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+
+        <!-- Preferred Categories -->
+        <div class="form-group">
+            <label>Preferred Categories</label>
+            <div class="categories">
+                <div class="category" onclick="toggleCategory(this)">News</div>
+                <div class="category" onclick="toggleCategory(this)">Events</div>
+                <div class="category" onclick="toggleCategory(this)">Updates</div>
+            </div>
+        </div>
+
+        <!-- Subscribe Button -->
+        <button class="subscribe-btn" onclick="subscribe()">Subscribe</button>
+
+        <!-- Confirmation Message -->
+        <div class="confirmation" id="confirmationMsg">Thank you for subscribing!</div>
+    </div>
+
+    <script>
+        function toggleCategory(element) {
+            element.classList.toggle("active");
+        }
+
+        function subscribe() {
+            document.getElementById("confirmationMsg").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>

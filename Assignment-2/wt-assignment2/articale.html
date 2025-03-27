@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Article Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 0;
+            border-bottom: 2px solid #ddd;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .featured-product img {
+            width: 100%;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        .article-content {
+            margin-top: 20px;
+        }
+        .article-section {
+            display: flex;
+            align-items: flex-start;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .article-section img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .related-articles {
+            margin-top: 20px;
+            padding: 10px;
+            background: #f1f1f1;
+            border-radius: 8px;
+        }
+        .related-articles div {
+            padding: 5px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .related-articles div:last-child {
+            border-bottom: none;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .buttons button {
+            width: 32%;
+            padding: 10px;
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .buttons button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- News Article Section -->
+        <div class="section-title">News Article</div>
+        <div class="profile">
+            <img src="profile.png" alt="Author">
+            <p><strong>John Doe</strong><br>Author</p>
+        </div>
+
+        <!-- Featured Product Section -->
+        <div class="section-title">Featured Product</div>
+        <div class="featured-product">
+            <img src="new-arrival.png" alt="New Arrival">
+        </div>
+        <p><strong>Product Name</strong></p>
+        <p>Data</p>
+
+        <!-- Article Content Section -->
+        <div class="section-title">Article Content</div>
+        <div class="article-content">
+            <div class="article-section">
+                <img src="icon.png" alt="Section 1">
+                <div>
+                    <p><strong>Section 1</strong></p>
+                    <p>Paragraph text...</p>
+                    <p><small>John Doe</small></p>
+                </div>
+            </div>
+            <div class="article-section">
+                <img src="icon.png" alt="Section 2">
+                <div>
+                    <p><strong>Section 2</strong></p>
+                    <p>Another paragraph text...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Articles Section -->
+        <div class="section-title">Related Articles</div>
+        <div class="related-articles">
+            <div><strong>Article Title</strong><br><small>Short description</small></div>
+            <div><strong>Another Article</strong><br><small>Brief info</small></div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button>Comment</button>
+            <button>Share</button>
+            <button>Like</button>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .banner {
+            display: flex;
+            gap: 10px;
+        }
+        .banner img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .content-section {
+            margin-top: 20px;
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .events {
+            display: flex;
+            gap: 10px;
+        }
+        .event-card {
+            flex: 1;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .event-card img {
+            width: 100%;
+            height: auto;
+        }
+        .event-info {
+            padding: 10px;
+            font-size: 14px;
+        }
+        .articles {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .article {
+            padding: 5px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .article:last-child {
+            border-bottom: none;
+        }
+        .categories {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .category {
+            background: #ddd;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background: black;
+            color: white;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">My Community Hub</div>
+
+        <div class="banner">
+            <img src="banner1.png" alt="Banner 1">
+            <img src="banner2.png" alt="Banner 2">
+        </div>
+
+        <div class="content-section">
+            <div class="section-title">Upcoming Events</div>
+            <div class="events">
+                <div class="event-card">
+                    <img src="event1.png" alt="Event 1">
+                    <div class="event-info">
+                        <p><strong>Last Night</strong></p>
+                        <p>Oct 16, 2022</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <img src="event2.png" alt="Event 2">
+                    <div class="event-info">
+                        <p><strong>Celebrity Parade</strong></p>
+                        <p>Nov 6, 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="section-title">Recent Articles</div>
+            <div class="articles">
+                <div class="article">Breaking News - 2 hours ago</div>
+                <div class="article">Sports Roundup - 1 day ago</div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="section-title">Popular Categories</div>
+            <div class="categories">
+                <div class="category">Local News</div>
+                <div class="category">Sports</div>
+                <div class="category">Health</div>
+            </div>
+        </div>
+
+        <div class="footer">Join Community Forum</div>
+    </div>
+</body>
+</html>
+
